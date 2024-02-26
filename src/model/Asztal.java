@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Asztal {
@@ -31,6 +32,10 @@ public class Asztal {
         this.rendelesek = rendelesek;
     }
     
+    
+     public List<Etel> getRendelesek(){
+        return Collections.unmodifiableList(rendelesek);
+    }
     
 
     /*
